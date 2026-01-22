@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+*{
+  scroll-behavior: smooth;
+}
+
+@theme{
+  --color-primary: #8e2a6d;
+  --font-heading: "Nunito", sans-serif;
+  --font-regular: "Inter", sans-serif;
+  
+}
