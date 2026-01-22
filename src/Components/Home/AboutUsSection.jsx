@@ -23,7 +23,8 @@ export default function AboutUsSection() {
           {/* Left Content */}
           <div data-aos="fade-left" data-aos-duration="1500">
             <p className="text-primary font-semibold mb-2">
-              About Upasana Hospital
+              About Upasana 
+              Hospital
             </p>
 
             <h2 className="font-heading text-3xl md:text-5xl font-extrabold text-gray-800 mb-6 leading-snug">
