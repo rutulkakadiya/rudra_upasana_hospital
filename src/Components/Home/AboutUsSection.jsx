@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function AboutUsSection() {
   return (
@@ -86,9 +87,11 @@ export default function AboutUsSection() {
               </div>
             </div>
 
-            <button className="bg-primary font-regular hover:bg-pink-700 transition text-white px-7 py-3 rounded-full font-semibold">
-              Learn More About Us
-            </button>
+            <Link to="/aboutUs">
+              <button className="bg-primary font-regular hover:bg-pink-700 transition text-white px-7 py-3 rounded-full font-semibold">
+                Learn More About Us
+              </button>
+            </Link>
           </div>
 
 

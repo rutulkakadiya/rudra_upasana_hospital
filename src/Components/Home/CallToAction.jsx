@@ -1,6 +1,17 @@
 import React from 'react';
 
 export default function CallToAction() {
+    
+    const handleButton = () => {
+
+        const phoneNumber = "918849261444";
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const whatsappURL = isMobile
+            ? `https://api.whatsapp.com/send?phone=${phoneNumber}`
+            : `https://web.whatsapp.com/send?phone=${phoneNumber}`;
+        window.open(whatsappURL, "_blank");
+    
+    };
     return (
         <section className="py-20 bg-primary relative overflow-hidden">
 
@@ -14,12 +25,14 @@ export default function CallToAction() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="bg-white font-regular text-primary hover:bg-gray-100 transition px-8 py-4 rounded-full font-bold text-lg shadow-lg">
+                    <button onClick={handleButton} className="bg-white font-regular text-primary hover:bg-gray-100 transition px-8 py-4 rounded-full font-bold text-lg shadow-lg">
                         Book Your Appointment
                     </button>
-                    <button className="bg-transparent font-regular border-2 border-white text-white hover:bg-white/10 transition px-8 py-4 rounded-full font-bold text-lg">
+                    <a href="tel:+918849261444">
+                        <button className="bg-transparent cursor-pointer font-regular border-2 border-white text-white hover:bg-white/10 transition px-8 py-4 rounded-full font-bold text-lg">
                         Contact Support
                     </button>
+                    </a>
                 </div>
             </div>
         </section>

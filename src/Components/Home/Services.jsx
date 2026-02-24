@@ -16,11 +16,11 @@ const services = [
     description: "Expert care for women's health issues ranging from adolescence to menopause, with advanced screenings and treatments.",
     image: "/Images/service_3.png",
   },
-  {
-    title: "Pediatrics",
-    description: "Compassionate care for your little ones, offering vaccinations, growth monitoring, and treatment for common childhood illnesses.",
-    image: "/Images/service_4.png",
-  },
+  // {
+  //   title: "Pediatrics",
+  //   description: "Compassionate care for your little ones, offering vaccinations, growth monitoring, and treatment for common childhood illnesses.",
+  //   image: "/Images/service_4.png",
+  // },
   {
     title: "Laparoscopic Surgery",
     description: "Minimally invasive surgical procedures ensuring faster recovery, less pain, and minimal scarring for patients.",
@@ -62,7 +62,7 @@ export default function Services() {
               <p className="text-gray-600 font-regular leading-relaxed">
                 {service.description}
               </p>
-              <a href="#" className="inline-block mt-6 font-regular text-primary font-semibold text-sm hover:text-pink-700 items-center">
+              <a href="/services" className="inline-block mt-6 font-regular text-primary font-semibold text-sm hover:text-pink-700 items-center">
                 Read More &rarr;
               </a>
             </div>

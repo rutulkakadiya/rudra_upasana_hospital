@@ -24,7 +24,7 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="space-y-6">
                         <img src="/logo.png" alt="Upasana Hospital" className="h-24" />
-                        <p className="text-gray-400 text-sm leading-relaxed">
+                        <p className="text-white text-sm leading-relaxed">
                             A trusted name in maternity, women’s healthcare & fertility,
                             delivering compassionate and advanced medical care.
                         </p>
@@ -66,7 +66,7 @@ export default function Footer() {
                     <div>
                         <FooterTitle>Contact Information</FooterTitle>
 
-                        <div className="space-y-6 text-gray-400 text-sm">
+                        <div className="space-y-6 text-white text-sm">
                             <ContactItem Icon={MapPin}>
                                 58, Next to J.N.V. High School,<br />
                                 Behind Shri M.P. Shah Arts & Science College,<br />
@@ -124,7 +124,7 @@ function FooterLink({ text }) {
         <li>
             <a
                 href="#"
-                className="flex items-center gap-3 text-gray-400 hover:text-pink-500 transition-all duration-300 group"
+                className="flex items-center gap-3 text-white hover:text-pink-500 transition-all duration-300 group"
             >
                 <span className="w-2 h-2 rounded-full bg-pink-700 group-hover:bg-pink-500 transition" />
                 {text}
